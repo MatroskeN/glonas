@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body h1, body p, body a, body button, body img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+body header {
+  width: 100vw;
+  height: 143px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+}
+body header .wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */
