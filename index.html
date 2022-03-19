@@ -12,6 +12,11 @@
 <body>
     <header>
     <div class="wrapper">
+        <svg class="burger" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.6729 13.2693H1.32715C0.594184 13.2693 0 13.8635 0 14.5964C0 15.3294 0.594183 15.9236 1.32715 15.9236H21.6729C22.4058 15.9236 23 15.3294 23 14.5964C23 13.8635 22.4058 13.2693 21.6729 13.2693Z" fill="#404040"/>
+            <path d="M21.6729 6.63452H1.32714C0.594183 6.63452 0 7.2287 0 7.96167C0 8.69463 0.594183 9.28881 1.32714 9.28881H21.6729C22.4058 9.28881 23 8.69463 23 7.96167C23 7.2287 22.4058 6.63452 21.6729 6.63452Z" fill="#404040"/>
+            <path d="M21.6729 0H1.32715C0.594183 0 0 0.594184 0 1.32715C0 2.06011 0.594184 2.65429 1.32715 2.65429H21.6729C22.4058 2.65429 23 2.06011 23 1.32715C23 0.594184 22.4058 0 21.6729 0Z" fill="#404040"/>
+        </svg>
         <img src="images/header-logo.png" alt="logo">
         <div class="headerItem">
             <p class="headerItem__city">
@@ -47,7 +52,8 @@
             <h1>
                 купить оборудование <br> глонасс в саратове
             </h1>
-            <img src="images/macbook.png" alt="macbook">
+            <img src="images/macbook.png" class="macbook" alt="macbook">
+            <img src="images/minimac.png" class="minibook" alt="macbook">
             <div class="tabs">
                 <div class="tab">
                     Глонасс <br> трекеры
@@ -378,13 +384,33 @@
             </div>
         </div>
         <div class="solutions">
-            <img src="images/truck.png" alt="truck">
+            <img class="truck" src="images/truck.png" alt="truck">
             <div class="choose">
                 <div class="title">Готовые отраслевые <br> решения</div>
                 <div class="subtitle">
                     Выберите решение, которое <br> подходит именно Вам
                 </div>
                 <hr>
+                <div class="mobTabs">
+                    <select name="" id="">
+                        <option value="">
+                            Грузоперевозки
+                        </option>
+                        <option value="">
+                            Такси и автопрокат
+                        </option>
+                        <option value="">
+                            Корпоративные автопарки
+                        </option>
+                        <option value="">
+                            Спецтехника
+                        </option>
+                        <option value="">
+                            Пассажироперевозки
+                        </option>
+                    </select>
+                </div>
+                <img class="miniTruck" src="images/minitruck.png" alt="truck">
                 <div class="equipment">
                     <div class="equipmentTitle">
                         Оборудование:
@@ -495,6 +521,12 @@
         </div>
         <div class="offerta">
             Информация, представленная на сайте, не является публичной офертой | <a href="#">Политика обработки персональных данных.</a>
+        </div>
+        <div class="mobCity">
+            <div class="city">
+                Ваш город: <a href="#">Саратов</a>
+            </div>
+            <a href="tel:+78452777265" class="tel">8 (845) 277-72-65</a>
         </div>
     </footer>
 </body>

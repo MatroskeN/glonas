@@ -31,6 +31,9 @@ body header .wrapper {
   align-items: center;
   justify-content: space-between;
 }
+body header .wrapper .burger {
+  display: none;
+}
 body header .wrapper .headerItem {
   display: flex;
   flex-direction: column;
@@ -145,9 +148,12 @@ body main .banner .tabs .tab {
 body main .banner .tabs .tab:first-child {
   border-right: 1px solid #404040;
 }
-body main .banner img {
+body main .banner .macbook {
   position: relative;
   z-index: 1;
+}
+body main .banner .minibook {
+  display: none;
 }
 body main .catalog h2 {
   margin: 80px 0 24px;
@@ -306,8 +312,14 @@ body main .catalog .shortItems .software {
 body main .solutions {
   display: flex;
 }
+body main .solutions .miniTruck {
+  display: none;
+}
 body main .solutions .choose {
   max-width: 408px;
+}
+body main .solutions .choose .mobTabs {
+  display: none;
 }
 body main .solutions .choose .title {
   font-family: "Montserrat";
@@ -615,6 +627,332 @@ body footer .offerta a {
   opacity: 0.4;
   color: #FFFFFF;
   text-decoration: underline;
+}
+body footer .mobCity {
+  display: none;
+}
+
+@media (max-width: 910px) {
+  body header {
+    padding: 0 16px;
+    height: 54px;
+  }
+  body header .wrapper {
+    max-width: 100%;
+  }
+  body header .wrapper .burger {
+    display: block;
+  }
+  body header .wrapper img {
+    width: 95px;
+  }
+  body header .wrapper .headerItem:nth-child(2n) {
+    display: none;
+  }
+  body header .wrapper .headerItem p {
+    font-size: 10px;
+    line-height: 88.9%;
+    text-align: right;
+  }
+  body header .wrapper .headerItem .headerItem__city {
+    margin-bottom: 6px;
+    font-size: 10px;
+    line-height: 88.9%;
+    text-align: right;
+  }
+  body header .wrapper .headerItem .headerItem__tel {
+    font-size: 10px;
+    line-height: 88.9%;
+    text-align: right;
+  }
+  body header .wrapper button {
+    display: none;
+  }
+  body main {
+    padding-top: 54px;
+  }
+  body main nav {
+    padding: 13px 16px;
+  }
+  body main nav .breadcrumbs a {
+    font-size: 8px;
+    line-height: 88.9%;
+  }
+  body main .yellowBlock {
+    width: 204px;
+    height: 243px;
+    left: 0px;
+    top: 45px;
+    background: #FFCC10;
+    border-radius: 0px;
+  }
+  body main .banner {
+    padding-left: 16px;
+    flex-direction: column;
+    margin-left: unset;
+  }
+  body main .banner h1 {
+    font-size: 19px;
+    line-height: 100%;
+    margin-top: 15px;
+    padding: 0;
+    max-width: 164px;
+  }
+  body main .banner .macbook {
+    display: none;
+  }
+  body main .banner .minibook {
+    display: block;
+    position: absolute;
+    top: 36px;
+    right: 0;
+  }
+  body main .banner .tabs {
+    position: relative;
+    flex-direction: column;
+    height: unset;
+    width: unset;
+    border: none;
+    align-items: flex-start;
+  }
+  body main .banner .tabs .tab {
+    padding: 0;
+    border: none;
+    display: block;
+    text-align: left;
+    font-size: 9px;
+    line-height: 88.9%;
+    margin-top: 10px;
+  }
+  body main .catalog {
+    margin-top: 26px;
+  }
+  body main .catalog h2 {
+    font-size: 16px;
+    line-height: 100%;
+    margin: 36px 0 10px;
+  }
+  body main .catalog .subtitle {
+    font-size: 10px;
+    line-height: 100%;
+    margin-bottom: 17px;
+  }
+  body main .catalog hr {
+    max-width: 289px;
+  }
+  body main .catalog .items .item {
+    padding-bottom: 38px;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  body main .catalog .items .item .itemPic {
+    margin: 0 auto 14px;
+    max-height: 122px;
+    width: auto;
+  }
+  body main .catalog .items .item .itemContent {
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  body main .catalog .items .item .itemContent .title {
+    font-size: 15px;
+    line-height: 100%;
+    margin-bottom: 10px;
+  }
+  body main .catalog .items .item .itemContent .description {
+    max-width: unset;
+  }
+  body main .catalog .items .item .itemContent .info .brand {
+    font-size: 9px;
+    line-height: 100%;
+    margin-bottom: 5px;
+    margin-right: -15px;
+  }
+  body main .catalog .items .item .itemContent .info .country {
+    font-size: 9px;
+    line-height: 100%;
+    margin-right: 30px;
+  }
+  body main .catalog .items .item .itemContent .info .rules p {
+    font-size: 9px;
+    line-height: 100%;
+  }
+  body main .catalog .items .item .line {
+    display: none;
+  }
+  body main .catalog .items .item .order {
+    margin-top: 31px;
+  }
+  body main .catalog .items .item .order .btnTitle {
+    font-size: 13px;
+    line-height: 100%;
+  }
+  body main .solutions .truck {
+    display: none;
+  }
+  body main .solutions .choose {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+  body main .solutions .choose hr {
+    margin-bottom: 9px;
+  }
+  body main .solutions .choose .miniTruck {
+    display: block;
+    margin-top: 19px;
+    margin-bottom: 10px;
+  }
+  body main .solutions .choose .mobTabs {
+    display: flex;
+  }
+  body main .solutions .choose .mobTabs select {
+    margin: 0 auto;
+    border: none;
+    width: 100px;
+  }
+  body main .solutions .choose .mobTabs select option {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 100%;
+    text-align: center;
+    color: #404040;
+  }
+  body main .solutions .choose .equipment {
+    padding: 0 16px;
+    margin-bottom: 18px;
+  }
+  body main .solutions .choose .equipment .equipmentTitle {
+    font-size: 12px;
+    line-height: 100%;
+    margin-bottom: 6px;
+  }
+  body main .solutions .choose .equipment .equipmentSubtitle {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  body main .solutions .choose .control {
+    padding: 0 16px;
+    margin-bottom: 27px;
+  }
+  body main .solutions .choose .control .controlTitle {
+    font-size: 12px;
+    line-height: 100%;
+    margin-bottom: 5px;
+  }
+  body main .solutions .choose .control .controlSubtitle {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  body main .solutions .choose .getSolution {
+    margin: 0 auto;
+    padding: 15px 14px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  body main .feedback {
+    flex-direction: column;
+  }
+  body main .feedback .questions {
+    justify-content: center;
+    align-items: center;
+    height: unset;
+    max-width: 100%;
+  }
+  body main .feedback .questions .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  body main .feedback .questions .block .title {
+    text-align: center;
+    font-size: 16px;
+    line-height: 100%;
+    margin-top: 35px;
+  }
+  body main .feedback .questions .block .subtitle {
+    text-align: center;
+    font-size: 12px;
+    line-height: 100%;
+    margin-top: 10px;
+    max-width: 246px;
+    margin-bottom: 28px;
+  }
+  body main .feedback .questionsForm {
+    padding: 17px 0;
+    max-width: 100%;
+  }
+  body main .feedback .questionsForm .formTitle {
+    font-size: 11px;
+    line-height: 100%;
+  }
+  body main .feedback .questionsForm hr {
+    width: 288px;
+    margin: 18px 0 26px;
+  }
+  body main .feedback .questionsForm form {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+  body main .feedback .questionsForm form button {
+    width: 188px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  body footer .wrapper {
+    max-width: 100%;
+    width: 288px;
+    padding: 16px;
+    flex-direction: column;
+  }
+  body footer .wrapper .contacts {
+    align-items: center;
+  }
+  body footer .wrapper .contacts .logo {
+    width: 150px;
+    margin-right: auto;
+  }
+  body footer .wrapper .contacts .title {
+    font-size: 16px;
+  }
+  body footer .wrapper .contacts .contactItem {
+    flex-direction: column;
+  }
+  body footer .wrapper .contacts .contactItem p {
+    font-size: 10px;
+  }
+  body footer .wrapper .contacts .seeAll {
+    font-size: 10px;
+    margin: 10px auto;
+  }
+  body footer .wrapper .menu {
+    display: none;
+  }
+  body footer .offerta {
+    border-top: 1px solid #FFFFFF;
+    padding-top: 16px;
+    font-size: 12px;
+  }
+  body footer .mobCity {
+    font-family: "Montserrat";
+    font-size: 12px;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+  }
+  body footer .mobCity .city {
+    color: #FFFFFF;
+  }
+  body footer .mobCity .city a {
+    color: #FFFFFF;
+  }
+  body footer .mobCity a {
+    color: #FFFFFF;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
