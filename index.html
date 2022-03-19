@@ -6,13 +6,496 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/stylesheet.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="wrapper">
-
+    <div class="wrapper">
+        <img src="images/header-logo.png" alt="logo">
+        <div class="headerItem">
+            <p class="headerItem__city">
+                Ваш город: <a href="#">Саратов</a>
+            </p>
+            <a class="headerItem__tel" href="tel:+8453688900">8 (845) 368-89-00</a>
         </div>
-    </header>
+        <div class="headerItem">
+            <p>
+                Адрес: г. Саратов, Ново-Астраханское шоссе, 67А
+            </p>
+            <br>
+            <p>
+                Время работы: Пн — Пт с 09:00 до 18:00
+            </p>
+        </div>
+        <button>
+            Заказать звонок
+        </button>
+    </div>
+</header>
+    <main>
+        <div class="yellowBlock">
+        </div>
+        <nav>
+               <div class="breadcrumbs">
+                   <a href="./index.html">Главная</a>
+                   <span>»</span>
+                   <a href="#">Оборудование</a>
+               </div>
+           </nav>
+        <div class="banner">
+            <h1>
+                купить оборудование <br> глонасс в саратове
+            </h1>
+            <img src="images/macbook.png" alt="macbook">
+            <div class="tabs">
+                <div class="tab">
+                    Глонасс <br> трекеры
+                </div>
+                <div class="tab">
+                    Датчики уровня <br> топлива
+                </div>
+                <div class="tab">
+                    Программное <br> обеспечение
+                </div>
+            </div>
+        </div>
+        <div class="catalog">
+            <h2>Глонасс трекеры</h2>
+            <div class="subtitle">
+                это устройства удаленного контроля работы подвижных объектов, получающие данные используя сигналы спутниковой системы ГЛОНАСС (Россия) и
+                передающие инофрмацию на сервер по средствам сети GSM.
+            </div>
+            <hr>
+            <div class="items">
+                <div class="item">
+                    <img class="itemPic" src="images/catalog/product1.png" alt="product">
+                    <div class="itemContent">
+                        <div class="title">
+                            Навигационный контролер <br> Arnavi 5
+                        </div>
+                        <div class="description">
+                            Многофункциональный трекер от одного из ведущих российских производителей оборудования мониторинга транспорта, который по праву заслужил высокий уровень доверия со стороны покупателей. Данный трекер оперативно передаёт информацию, долго работает в автономном режиме и обладает высоким качеством исполнения.
+                        </div>
+                        <div class="info">
+                            <div class="brand">
+                                Бренд: ArusNavi
+                            </div>
+                            <div class="country">
+                                Страна: Россия
+                            </div>
+                            <div class="rules">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="28" height="28" fill="url(#pattern0)"/>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2_210" transform="scale(0.00195312)"/>
+                                        </pattern>
+                                        <image id="image0_2_210" width="512" height="512" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                                <p>
+                                    Руководство пользователя <br>
+                                    <a href="#" download="rules">Скачать</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="order">
+                        <div class="btnTitle">Цена: по запросу</div>
+                        <button class="buyBtn">купить</button>
+                        <button class="orderBtn">заказать установку</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemPic" src="images/catalog/product2.png" alt="product">
+                    <div class="itemContent">
+                        <div class="title">
+                            Навигационный контролер <br> Arnavi 5
+                        </div>
+                        <div class="description">
+                            Многофункциональный трекер от одного из ведущих российских производителей оборудования мониторинга транспорта, который по праву заслужил высокий уровень доверия со стороны покупателей. Данный трекер оперативно передаёт информацию, долго работает в автономном режиме и обладает высоким качеством исполнения.
+                        </div>
+                        <div class="info">
+                            <div class="brand">
+                                Бренд: ArusNavi
+                            </div>
+                            <div class="country">
+                                Страна: Россия
+                            </div>
+                            <div class="rules">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="28" height="28" fill="url(#pattern0)"/>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2_210" transform="scale(0.00195312)"/>
+                                        </pattern>
+                                        <image id="image0_2_210" width="512" height="512" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                                <p>
+                                    Руководство пользователя <br>
+                                    <a href="#" download="rules">Скачать</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="order">
+                        <div class="btnTitle">Цена: по запросу</div>
+                        <button class="buyBtn">купить</button>
+                        <button class="orderBtn">заказать установку</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemPic" src="images/catalog/product3.png" alt="product">
+                    <div class="itemContent">
+                        <div class="title">
+                            Навигационный контролер <br> Arnavi 5
+                        </div>
+                        <div class="description">
+                            Многофункциональный трекер от одного из ведущих российских производителей оборудования мониторинга транспорта, который по праву заслужил высокий уровень доверия со стороны покупателей. Данный трекер оперативно передаёт информацию, долго работает в автономном режиме и обладает высоким качеством исполнения.
+                        </div>
+                        <div class="info">
+                            <div class="brand">
+                                Бренд: ArusNavi
+                            </div>
+                            <div class="country">
+                                Страна: Россия
+                            </div>
+                            <div class="rules">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="28" height="28" fill="url(#pattern0)"/>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2_210" transform="scale(0.00195312)"/>
+                                        </pattern>
+                                        <image id="image0_2_210" width="512" height="512" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                                <p>
+                                    Руководство пользователя <br>
+                                    <a href="#" download="rules">Скачать</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="order">
+                        <div class="btnTitle">Цена: по запросу</div>
+                        <button class="buyBtn">купить</button>
+                        <button class="orderBtn">заказать установку</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemPic" src="images/catalog/product4.png" alt="product">
+                    <div class="itemContent">
+                        <div class="title">
+                            Навигационный контролер <br> Arnavi 5
+                        </div>
+                        <div class="description">
+                            Многофункциональный трекер от одного из ведущих российских производителей оборудования мониторинга транспорта, который по праву заслужил высокий уровень доверия со стороны покупателей. Данный трекер оперативно передаёт информацию, долго работает в автономном режиме и обладает высоким качеством исполнения.
+                        </div>
+                        <div class="info">
+                            <div class="brand">
+                                Бренд: ArusNavi
+                            </div>
+                            <div class="country">
+                                Страна: Россия
+                            </div>
+                            <div class="rules">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="28" height="28" fill="url(#pattern0)"/>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2_210" transform="scale(0.00195312)"/>
+                                        </pattern>
+                                        <image id="image0_2_210" width="512" height="512" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                                <p>
+                                    Руководство пользователя <br>
+                                    <a href="#" download="rules">Скачать</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="order">
+                        <div class="btnTitle">Цена: по запросу</div>
+                        <button class="buyBtn">купить</button>
+                        <button class="orderBtn">заказать установку</button>
+                    </div>
+                </div>
+            </div>
+            <h2>Глонасс трекеры</h2>
+            <div class="subtitle">
+                это устройства удаленного контроля работы подвижных объектов, получающие данные используя сигналы спутниковой системы ГЛОНАСС (Россия) и
+                передающие инофрмацию на сервер по средствам сети GSM.
+            </div>
+            <hr>
+            <div class="items shortItems">
+                <div class="item">
+                    <img class="itemPic" src="images/catalog/product5.png" alt="product">
+                    <div class="itemContent">
+                        <div class="title">
+                            Навигационный контролер <br> Arnavi 5
+                        </div>
+                        <div class="description">
+                            Многофункциональный трекер от одного из ведущих российских производителей оборудования мониторинга транспорта, который по праву заслужил высокий уровень доверия со стороны покупателей. Данный трекер оперативно передаёт информацию, долго работает в автономном режиме и обладает высоким качеством исполнения.
+                        </div>
+                        <div class="info">
+                            <div class="brand">
+                                Бренд: ArusNavi
+                            </div>
+                            <div class="country">
+                                Страна: Россия
+                            </div>
+                            <div class="rules">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="28" height="28" fill="url(#pattern0)"/>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2_210" transform="scale(0.00195312)"/>
+                                        </pattern>
+                                        <image id="image0_2_210" width="512" height="512" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                                <p>
+                                    Руководство пользователя <br>
+                                    <a href="#" download="rules">Скачать</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="order">
+                        <div class="btnTitle">Цена: по запросу</div>
+                        <button class="buyBtn">купить</button>
+                        <button class="orderBtn">заказать установку</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemPic" src="images/catalog/product6.png" alt="product">
+                    <div class="itemContent">
+                        <div class="title">
+                            Навигационный контролер <br> Arnavi 5
+                        </div>
+                        <div class="description">
+                            Многофункциональный трекер от одного из ведущих российских производителей оборудования мониторинга транспорта, который по праву заслужил высокий уровень доверия со стороны покупателей. Данный трекер оперативно передаёт информацию, долго работает в автономном режиме и обладает высоким качеством исполнения.
+                        </div>
+                        <div class="info">
+                            <div class="brand">
+                                Бренд: ArusNavi
+                            </div>
+                            <div class="country">
+                                Страна: Россия
+                            </div>
+                            <div class="rules">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="28" height="28" fill="url(#pattern0)"/>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2_210" transform="scale(0.00195312)"/>
+                                        </pattern>
+                                        <image id="image0_2_210" width="512" height="512" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                                <p>
+                                    Руководство пользователя <br>
+                                    <a href="#" download="rules">Скачать</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="order">
+                        <div class="btnTitle">Цена: по запросу</div>
+                        <button class="buyBtn">купить</button>
+                        <button class="orderBtn">заказать установку</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="itemPic" src="images/catalog/product7.png" alt="product">
+                    <div class="itemContent">
+                        <div class="title">
+                            Навигационный контролер <br> Arnavi 5
+                        </div>
+                        <div class="description">
+                            Многофункциональный трекер от одного из ведущих российских производителей оборудования мониторинга транспорта, который по праву заслужил высокий уровень доверия со стороны покупателей. Данный трекер оперативно передаёт информацию, долго работает в автономном режиме и обладает высоким качеством исполнения.
+                        </div>
+                        <div class="info">
+                            <div class="brand">
+                                Бренд: ArusNavi
+                            </div>
+                            <div class="country">
+                                Страна: Россия
+                            </div>
+                            <div class="rules">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="28" height="28" fill="url(#pattern0)"/>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2_210" transform="scale(0.00195312)"/>
+                                        </pattern>
+                                        <image id="image0_2_210" width="512" height="512" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                                <p>
+                                    Руководство пользователя <br>
+                                    <a href="#" download="rules">Скачать</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="order">
+                        <div class="btnTitle">Цена: по запросу</div>
+                        <button class="buyBtn">купить</button>
+                        <button class="orderBtn">заказать установку</button>
+                    </div>
+                </div>
+                <div class="software">
+                    Программное обеспечение
+                </div>
+                <div class="item">
+                    <img class="itemPic" src="images/catalog/product8.png" alt="product">
+                    <div class="itemContent">
+                        <div class="title">
+                            Навигационный контролер <br> Arnavi 5
+                        </div>
+                        <div class="description">
+                            Многофункциональный трекер от одного из ведущих российских производителей оборудования мониторинга транспорта, который по праву заслужил высокий уровень доверия со стороны покупателей. Данный трекер оперативно передаёт информацию, долго работает в автономном режиме и обладает высоким качеством исполнения.
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="order">
+                        <button class="buyBtn">попробовать бесплатно</button>
+                        <button class="orderBtn">вход</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solutions">
+            <img src="images/truck.png" alt="truck">
+            <div class="choose">
+                <div class="title">Готовые отраслевые <br> решения</div>
+                <div class="subtitle">
+                    Выберите решение, которое <br> подходит именно Вам
+                </div>
+                <hr>
+                <div class="equipment">
+                    <div class="equipmentTitle">
+                        Оборудование:
+                    </div>
+                    <div class="equipmentSubtitle">
+                        Абонентский терминал ГЛОНАСС/GPS;
+                        Датчики топлива.
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="controlTitle">
+                        Контроль:
+                    </div>
+                    <div class="controlSubtitle">
+                        Местоположения, скорости, моточасов, посещения контрольных точек,
+                        соблюдения маршрута и расхода топлива в режиме реального времени.
+                    </div>
+                </div>
+                <button class="getSolution">
+                    получить предложение
+                </button>
+            </div>
+        </div>
+        <div class="feedback">
+            <div class="questions">
+                <div class="block">
+                    <div class="title">
+                        остались вопросы?
+                    </div>
+                    <div class="subtitle">
+                        Получите консультацию от наших специалистов
+                    </div>
+                </div>
+            </div>
+            <div class="questionsForm">
+                <div class="formTitle">
+                    По телефону <a href="tel:+78452777265">+7 8452 77-72-65</a> или
+                    <br> заполните форму
+                </div>
+                <hr>
+                <form action="">
+                    <input type="text">
+                    <input type="text">
+                    <button>
+                        Перейти в каталог
+                    </button>
+                    <div class="policy">
+                        Нажимая на кнопку, я соглашаюсь с условиями политики обработки персональных данных
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="contacts">
+                <img class="logo" src="images/footer-logo.png" alt="logo">
+                <div class="title">Контакты:</div>
+                <div class="contactItem">
+                    <div class="icon">
+                        <img src="images/geo.png" alt="icon">
+                    </div>
+                    <p>410012, г.Саратов, Ново-Астраханское шоссе, 67А <br></p>
+                </div>
+                <a class="seeAll" href="#">Смотреть все адреса</a>
+                <div class="contactItem">
+                    <div class="icon">
+                        <img src="images/time.png" alt="icon">
+                    </div>
+                    <p>Пн-Пт с 09:00 до 18:00; Сб,Вс - Выходной</p>
+                </div>
+                <div class="contactItem itemPhone">
+                    <div class="icon">
+                        <img src="images/phone.png" alt="icon">
+                    </div>
+                    <a href="tel:+78453688900">8 (845) 368-89-00</a>
+                </div>
+                <div class="contactItem">
+                    <div class="icon">
+                        <img src="images/mail.png" alt="icon">
+                    </div>
+                    <a href="mailto:mail@plata-ts.ru">mail@plata-ts.ru</a>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="#">
+                    О компании
+                </a>
+                <a href="#">
+                    Цифровые тахографы
+                </a>
+                <a href="#">
+                    Карты водителя
+                </a>
+                <a href="#">
+                    Глонасс мониторинг
+                </a>
+                <a href="#">
+                    Переоборудование ДОПОГ
+                </a>
+                <a href="#">
+                    Климатическое оборудование
+                </a>
+                <a href="#">
+                    Лицензии и сертификаты
+                </a>
+            </div>
+        </div>
+        <div class="offerta">
+            Информация, представленная на сайте, не является публичной офертой | <a href="#">Политика обработки персональных данных.</a>
+        </div>
+    </footer>
 </body>
 </html>
