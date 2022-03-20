@@ -364,9 +364,46 @@ body {
       .miniTruck{
         display: none;
       }
+      .truck{
+        position: relative;
+        display: flex;
+        .switch{
+          position: absolute;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 100%;
+          color: rgba(101, 101, 101, 0.5);
+          cursor: pointer;
+        }
+        .active{
+          color: #404040;
+        }
+        .cargo{
+          top: 183px;
+          right: -68px;
+        }
+        .taxi{
+          top: 274px;
+          right: -168px;
+        }
+        .corp{
+          top:384px;
+          right: -162px;
+        }
+        .spec{
+          top: 527px;
+          right: -125px;
+        }
+        .passenger{
+          top: 622px;
+          right: -152px;
+        }
+      }
       .choose {
         max-width: 408px;
-        margin-left: 131px;
+        margin-left: 250px;
         .mobTabs{
           display: none;
         }
@@ -847,9 +884,11 @@ body {
         }
       }
       .solutions{
+        flex-direction: column;
         .truck{
-          width: 72%;
+          width: 80%;
           height: fit-content;
+          margin-bottom: 30px;
         }
         .choose{
           margin-left: 10px;

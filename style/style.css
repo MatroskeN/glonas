@@ -322,9 +322,46 @@ body main .solutions {
 body main .solutions .miniTruck {
   display: none;
 }
+body main .solutions .truck {
+  position: relative;
+  display: flex;
+}
+body main .solutions .truck .switch {
+  position: absolute;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: rgba(101, 101, 101, 0.5);
+  cursor: pointer;
+}
+body main .solutions .truck .active {
+  color: #404040;
+}
+body main .solutions .truck .cargo {
+  top: 183px;
+  right: -68px;
+}
+body main .solutions .truck .taxi {
+  top: 274px;
+  right: -168px;
+}
+body main .solutions .truck .corp {
+  top: 384px;
+  right: -162px;
+}
+body main .solutions .truck .spec {
+  top: 527px;
+  right: -125px;
+}
+body main .solutions .truck .passenger {
+  top: 622px;
+  right: -152px;
+}
 body main .solutions .choose {
   max-width: 408px;
-  margin-left: 131px;
+  margin-left: 250px;
 }
 body main .solutions .choose .mobTabs {
   display: none;
@@ -766,9 +803,13 @@ body .mask .popup .content .accept {
     padding-top: 57px;
     padding-left: 50px;
   }
+  body main .solutions {
+    flex-direction: column;
+  }
   body main .solutions .truck {
-    width: 72%;
+    width: 80%;
     height: fit-content;
+    margin-bottom: 30px;
   }
   body main .solutions .choose {
     margin-left: 10px;
