@@ -530,7 +530,6 @@ body main .feedback .questionsForm form input::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 88.9%;
-  text-align: center;
   color: #000000;
   opacity: 0.4;
 }
@@ -804,12 +803,34 @@ body .mask .popup .content .accept {
     padding-left: 50px;
   }
   body main .solutions {
-    flex-direction: column;
+    margin-bottom: 30px;
   }
   body main .solutions .truck {
-    width: 80%;
+    width: 732px;
     height: fit-content;
-    margin-bottom: 30px;
+  }
+  body main .solutions .truck .truckPic {
+    width: 532px;
+  }
+  body main .solutions .truck .cargo {
+    top: 101px;
+    right: 68px;
+  }
+  body main .solutions .truck .taxi {
+    top: 154px;
+    right: 12px;
+  }
+  body main .solutions .truck .corp {
+    top: 209px;
+    right: 22px;
+  }
+  body main .solutions .truck .spec {
+    top: 303px;
+    right: 65px;
+  }
+  body main .solutions .truck .passenger {
+    top: 355px;
+    right: 18px;
   }
   body main .solutions .choose {
     margin-left: 10px;
@@ -960,9 +981,11 @@ body .mask .popup .content .accept {
     max-width: 600px;
     display: flex;
     flex-direction: column;
+    margin-left: unset;
   }
   body main .solutions .choose hr {
     margin-bottom: 9px;
+    width: 100%;
   }
   body main .solutions .choose .miniTruck {
     display: block;
@@ -975,7 +998,7 @@ body .mask .popup .content .accept {
   body main .solutions .choose .mobTabs select {
     margin: 0 auto;
     border: none;
-    width: 122px;
+    width: fit-content;
     outline: none;
   }
   body main .solutions .choose .mobTabs select option {
@@ -1154,6 +1177,16 @@ body .mask .popup .content .accept {
   }
   body main .solutions .choose {
     max-width: 320px;
+  }
+  body main .solutions .choose .title {
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+  }
+  body main .solutions .choose .subtitle {
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
   }
   body footer .wrapper {
     max-width: 100%;
