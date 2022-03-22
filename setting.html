@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <svg class="burger" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.6729 13.2693H1.32715C0.594184 13.2693 0 13.8635 0 14.5964C0 15.3294 0.594183 15.9236 1.32715 15.9236H21.6729C22.4058 15.9236 23 15.3294 23 14.5964C23 13.8635 22.4058 13.2693 21.6729 13.2693Z" fill="#404040"/>
+            <path d="M21.6729 6.63452H1.32714C0.594183 6.63452 0 7.2287 0 7.96167C0 8.69463 0.594183 9.28881 1.32714 9.28881H21.6729C22.4058 9.28881 23 8.69463 23 7.96167C23 7.2287 22.4058 6.63452 21.6729 6.63452Z" fill="#404040"/>
+            <path d="M21.6729 0H1.32715C0.594183 0 0 0.594184 0 1.32715C0 2.06011 0.594184 2.65429 1.32715 2.65429H21.6729C22.4058 2.65429 23 2.06011 23 1.32715C23 0.594184 22.4058 0 21.6729 0Z" fill="#404040"/>
+        </svg>
+        <img src="images/header-logo.png" alt="logo">
+        <div class="headerItem">
+            <p class="headerItem__city">
+                Ваш город: <a href="#">Саратов</a>
+            </p>
+            <a class="headerItem__tel" href="tel:+8453688900">8 (845) 368-89-00</a>
+        </div>
+        <div class="headerItem">
+            <p>
+                Адрес: г. Саратов, Ново-Астраханское шоссе, 67А
+            </p>
+            <br>
+            <p>
+                Время работы: Пн — Пт с 09:00 до 18:00
+            </p>
+        </div>
+        <button>
+            Заказать звонок
+        </button>
+    </div>
+</header>
+    <main>
+        <nav>
+            <div class="breadcrumbs">
+                <a href="./index.html">Главная</a>
+                <span>»</span>
+                <a href="#">Установка Глонасс</a>
+            </div>
+        </nav>
+        <div class="banner settingsBanner">
+            <div class="yellowBlock">
+                <div class="bottomLine"></div>
+            </div>
+            <h1>
+                установка Глонасс / GPS <br> в саратове
+            </h1>
+            <img src="images/settings/glonas.png" class="glonas" alt="macbook">
+            <img src="images/settings/miniGlonas.png" class="miniGlonas" alt="macbook">
+            <div class="subtitle">
+                Установка Глонасс для мониторинга и контроля транспорта с установкой под ключ за 5 500 ₽
+            </div>
+            <div class="bannerForm">
+                <form action="">
+                    <div class="formTitle">
+                        Заполните форму,
+                        мы перезвоним и все расскажем!
+                    </div>
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
+                    <button>
+                        <p>отправить</p>
+                    </button>
+                    <div class="policy">
+                        Нажимая на кнопку, я соглашаюсь с условиями политики обработки персональных данных
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="expenses">
+            <div class="title">
+                снижает затраты на содержание автопарка
+            </div>
+            <div class="subtitle">
+                Контроль транспорта с помощью спутникового мониторинга ГЛОНАСС\GPS значительно повышает эффективность владения автопарком как собственного, так и арендованного. Установка ГЛОНАСС мониторинга автотранспорта обеспечивает полный контроль за автопарком. Ваши водители под присмотром 24 часа в сутки.
+            </div>
+            <div class="diagramBlock">
+                <div class="item">
+                    <img src="images/settings/fifty.png" alt="percentage">
+                    <p>
+                        Снижает расходы на ремонт
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/hundred.png" alt="percentage">
+                    <p>
+                        Снижает кол-во нарушений ПДД, повышает качество вождения
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/hundred.png" alt="percentage">
+                    <p>
+                        Снижает перепробеги и левые рейсы
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/eighty.png" alt="percentage">
+                    <p>
+                        Снижает аварийность
+                    </p>
+                </div>
+            </div>
+            <div class="perkBlock">
+                <div class="item">
+                    <img src="images/settings/perk1.png" alt="perk">
+                    <p>
+                        Отслеживает нахождение ТС
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/perk2.png" alt="perk">
+                    <p>
+                        Контролирует пробег транспорта
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/perk3.png" alt="perk">
+                    <p>
+                        Считает моточасы
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/perk4.png" alt="perk">
+                    <p>
+                        Контролирует расход горючего (средний расход, сливы, заправки)
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/perk5.png" alt="perk">
+                    <p>
+                        Анализ работы механизмов
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/perk3.png" alt="perk">
+                    <p>
+                        Контроль времени простоя ТС
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/perk6.png" alt="perk">
+                    <p>
+                        Видеомониторинг автотранспорта
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/perk7.png" alt="perk">
+                    <p>
+                        Контроль посещения произвольных геозон
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/perk8.png" alt="perk">
+                    <p>
+                        Контроль водительского состава (заполнение водительских карт)
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/perk9.png" alt="perk">
+                    <p>
+                        Повышает безопасность
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/perk10.png" alt="perk">
+                    <p>
+                        По всему транспорту можно получить групповые отчеты
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/perk11.png" alt="perk">
+                    <p>
+                        Можно получить доступ с любого устройства. поддерживающего выход в интернет
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/perk12.png" alt="perk">
+                    <p>
+                        Система контроля транспрта онлайн 24/7/365
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="satelliteBlock">
+            <div class="info">
+                <div class="title">
+                    Оборудование спутникового мониторинга автопарка для любого транспорта
+                </div>
+                <div class="subtitle">
+                    В систему управления АТП мы интегрируем многофункциональное оборудование от одного из ведущих российских производителей систем контроля расхода топлива и мониторинга автотранспорта.
+                </div>
+            </div>
+            <div class="content">
+                <img src="images/settings/truck.png" alt="truck">
+                <div class="markers">
+                    <div class="marker first">
+                        <img src="images/settings/marker.png" alt="marker">
+                    </div>
+                    <div class="marker second">
+                        <img src="images/settings/marker.png" alt="marker">
+                    </div>
+                    <div class="marker third">
+                        <img src="images/settings/marker.png" alt="marker">
+                    </div>
+                    <div class="marker fourth">
+                        <img src="images/settings/marker.png" alt="marker">
+                    </div>
+                </div>
+            </div>
+            <div class="mobileContent">
+                <div class="item">
+                    <div class="itemTitle">
+                        Спутниковые, GPS\ГЛОНАСС терминалы ( трекеры )
+                    </div>
+                    <div class="itemSubtitle">
+                        Устройства удаленного слежения и контроля работы подвижных объектов. Данные о местоположении устройство получает, используя сигналы спутниковых систем ГЛОНАСС и GPS
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="itemTitle">
+                        Датчики контроля расхода топлива
+                    </div>
+                    <div class="itemSubtitle">
+                        Это устройство, которое показывает объем топлива в баке. Прибор входит в состав систем GPS/ГЛОНАСС мониторинга, являясь отличным решением по оптимизации затрат на ГСМ
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="itemTitle">
+                        Системы видеонаблюдения на транспорте
+                    </div>
+                    <div class="itemSubtitle">
+                        Позволяет в режиме реального времени отслеживать погрузку-выгрузку и перемещение грузов, мошенничество или отклонение от маршрута, состояние водителя
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="itemTitle">
+                        Дополнительные датчики контроля состояния ТС
+                    </div>
+                    <div class="itemSubtitle">
+                        Устройства для передачи информации о работе дополнительных агрегатов транспортных средств. Используется в системе GPS/ГЛОНАСС автомониторинга
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="priceBlock">
+            <div class="title">
+                цена установки глонасс “под ключ”
+            </div>
+            <div class="prices">
+                <div class="column first">
+                    <div class="item head">
+                        ГЛОНАСС терминал
+                    </div>
+                    <div class="item">
+                        Teltonika FM1110
+                    </div>
+                    <div class="item">
+                        Teltonika FM1110
+                    </div>
+                    <div class="item">
+                        Teltonika FM1120
+                    </div>
+                    <div class="item">
+                        Teltonika FM1110
+                    </div>
+                    <div class="item">
+                        Teltonika FM1125
+                    </div>
+                    <div class="item">
+                        Teltonika FM1120
+                    </div>
+                </div>
+                <div class="column second">
+                    <div class="item head">
+                        Цена комплекта
+                    </div>
+                    <div class="item">
+                        <p class="oldPrice">3 900 ₽</p>
+                        <p class="newPrice">3 000 ₽<sup>*</sup></p>
+                    </div>
+                    <div class="item">
+                        <p class="oldPrice">5 000 ₽</p>
+                        <p class="newPrice">4 500 ₽<sup>*</sup></p>
+                    </div>
+                    <div class="item">
+                        <p class="oldPrice"></p>
+                        <p class="newPrice">5 500 ₽</p>
+                    </div>
+                    <div class="item">
+                        <p class="oldPrice"></p>
+                        <p class="newPrice">5 500 ₽</p>
+                    </div>
+                    <div class="item">
+                        <p class="oldPrice"></p>
+                        <p class="newPrice">10 000 ₽</p>
+                    </div>
+                    <div class="item">
+                        <p class="oldPrice"></p>
+                        <p class="newPrice">15 000 ₽</p>
+                    </div>
+                </div>
+                <div class="column third">
+                    <div class="item head">
+                        Установка и настройка оборудования
+                    </div>
+                    <div class="item">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14.9098" cy="15.4099" r="13.5" stroke="#797979"/>
+                            <path d="M20.5344 19.6434L16.5039 15.6129L20.4496 11.6673L19.495 10.7127L15.5493 14.6583L11.5188 10.6278L10.6066 11.54L14.6371 15.5705L10.7127 19.4949L11.6673 20.4495L15.5917 16.5251L19.6222 20.5556L20.5344 19.6434Z" fill="#797979"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13.5" stroke="#797979"/>
+                            <circle cx="14" cy="14" r="5" fill="#FFCC10"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13.5" stroke="#797979"/>
+                            <circle cx="14" cy="14" r="5" fill="#FFCC10"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13.5" stroke="#797979"/>
+                            <circle cx="14" cy="14" r="5" fill="#FFCC10"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13.5" stroke="#797979"/>
+                            <circle cx="14" cy="14" r="5" fill="#FFCC10"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13.5" stroke="#797979"/>
+                            <circle cx="14" cy="14" r="5" fill="#FFCC10"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="column fourth">
+                    <div class="item head">
+                        Обучение и консультации по работе с ПО
+                    </div>
+                    <div class="item">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14.9098" cy="15.4099" r="13.5" stroke="#797979"/>
+                            <path d="M20.5344 19.6434L16.5039 15.6129L20.4496 11.6673L19.495 10.7127L15.5493 14.6583L11.5188 10.6278L10.6066 11.54L14.6371 15.5705L10.7127 19.4949L11.6673 20.4495L15.5917 16.5251L19.6222 20.5556L20.5344 19.6434Z" fill="#797979"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13.5" stroke="#797979"/>
+                            <circle cx="14" cy="14" r="5" fill="#FFCC10"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13.5" stroke="#797979"/>
+                            <circle cx="14" cy="14" r="5" fill="#FFCC10"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13.5" stroke="#797979"/>
+                            <circle cx="14" cy="14" r="5" fill="#FFCC10"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13.5" stroke="#797979"/>
+                            <circle cx="14" cy="14" r="5" fill="#FFCC10"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="13.5" stroke="#797979"/>
+                            <circle cx="14" cy="14" r="5" fill="#FFCC10"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="column fifth">
+                    <div class="item head">
+                        Дополнительный функционал
+                    </div>
+                    <div class="item">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14.9098" cy="15.4099" r="13.5" stroke="#797979"/>
+                            <path d="M20.5344 19.6434L16.5039 15.6129L20.4496 11.6673L19.495 10.7127L15.5493 14.6583L11.5188 10.6278L10.6066 11.54L14.6371 15.5705L10.7127 19.4949L11.6673 20.4495L15.5917 16.5251L19.6222 20.5556L20.5344 19.6434Z" fill="#797979"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14.9098" cy="15.4099" r="13.5" stroke="#797979"/>
+                            <path d="M20.5344 19.6434L16.5039 15.6129L20.4496 11.6673L19.495 10.7127L15.5493 14.6583L11.5188 10.6278L10.6066 11.54L14.6371 15.5705L10.7127 19.4949L11.6673 20.4495L15.5917 16.5251L19.6222 20.5556L20.5344 19.6434Z" fill="#797979"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14.9098" cy="15.4099" r="13.5" stroke="#797979"/>
+                            <path d="M20.5344 19.6434L16.5039 15.6129L20.4496 11.6673L19.495 10.7127L15.5493 14.6583L11.5188 10.6278L10.6066 11.54L14.6371 15.5705L10.7127 19.4949L11.6673 20.4495L15.5917 16.5251L19.6222 20.5556L20.5344 19.6434Z" fill="#797979"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        Функция отключения двигателя
+                    </div>
+                    <div class="item">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14.9098" cy="15.4099" r="13.5" stroke="#797979"/>
+                            <path d="M20.5344 19.6434L16.5039 15.6129L20.4496 11.6673L19.495 10.7127L15.5493 14.6583L11.5188 10.6278L10.6066 11.54L14.6371 15.5705L10.7127 19.4949L11.6673 20.4495L15.5917 16.5251L19.6222 20.5556L20.5344 19.6434Z" fill="#797979"/>
+                        </svg>
+                    </div>
+                    <div class="item">
+                        Установка датчика <br> уровня топлива
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="devicesBlock">
+            <div class="info">
+                <div class="title">
+                    Только качественное оборудование глонасс
+                </div>
+                <button>
+                    перейти в каталог
+                </button>
+            </div>
+            <div class="devices">
+                <div class="line"></div>
+                <div class="item">
+                    <img src="images/settings/device1.png" alt="device">
+                    <p>
+                        ГЛОНАСС / GPS трекеры
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/device2.png" alt="device">
+                    <p>
+                        Датчики уровня топлива
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/settings/device3.png" alt="device">
+                    <p>
+                        Доступ к сервису ГЛОНАСС / GPS
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="solutions">
+            <div class="truck">
+                <img class="truckPic" src="images/truck.png" alt="truck">
+                <div class="switch cargo active">Грузоперевозки</div>
+                <div class="switch taxi">Такси и автопрокат</div>
+                <div class="switch corp">Корпоративные <br> автопарки</div>
+                <div class="switch spec">Спецтехника</div>
+                <div class="switch passenger">Пассажироперевозки</div>
+            </div>
+            <div class="choose">
+                <div class="title">Готовые отраслевые <br> решения</div>
+                <div class="subtitle">
+                    Выберите решение, которое <br> подходит именно Вам
+                </div>
+                <hr>
+                <div class="mobTabs">
+                    <select name="" id="">
+                        <option value="">
+                            Грузоперевозки
+                        </option>
+                        <option value="">
+                            Такси и автопрокат
+                        </option>
+                        <option value="">
+                            Корпоративные автопарки
+                        </option>
+                        <option value="">
+                            Спецтехника
+                        </option>
+                        <option value="">
+                            Пассажироперевозки
+                        </option>
+                    </select>
+                </div>
+                <img class="miniTruck" src="images/minitruck.png" alt="truck">
+                <div class="equipment">
+                    <div class="equipmentTitle">
+                        Оборудование:
+                    </div>
+                    <div class="equipmentSubtitle">
+                        Абонентский терминал ГЛОНАСС/GPS;
+                        Датчики топлива.
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="controlTitle">
+                        Контроль:
+                    </div>
+                    <div class="controlSubtitle">
+                        Местоположения, скорости, моточасов, посещения контрольных точек,
+                        соблюдения маршрута и расхода топлива в режиме реального времени.
+                    </div>
+                </div>
+                <button class="getSolution">
+                    получить предложение
+                </button>
+            </div>
+        </div>
+        <div class="benefits">
+            <div class="block">
+                <div class="info">
+                    <div class="title">
+                        Почему стоит купить и установить систему ГЛОНАСС мониторинга автопарка
+                    </div>
+                    <div class="subtitle">
+                        Установить ГЛОНАСС GPS на машину и подключиться к комплексному решению спутникового мониторинга и контроля транспорта, контроля расхода топлива MONTRANS Вы получаете не просто отдельные телематические составляющие, а полноценную систему мониторинга автопарка, по выгодной цене.
+                    </div>
+                </div>
+                <div class="perks">
+                    <div class="title">
+                        Подключите свой транспорт к программе управления автопарком и забудьте, что такое:
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <img src="images/settings/perk13.png" alt="perk">
+                            <p>
+                                Сливы топлива, махинации с чеками на АЗС
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="images/settings/perk14.png" alt="perk">
+                            <p>
+                                Накрутки одометра для списаний топлива
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="images/settings/perk15.png" alt="perk">
+                            <p>
+                                Прохождения ТО не вовремя
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="images/settings/perk16.png" alt="perk">
+                            <p>
+                                Нарушения водителя маршрута следования ТС
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="images/settings/perk17.png" alt="perk">
+                            <p>
+                                Долгая обработка документов бухгалтерии
+                            </p>
+                        </div>
+                        <div class="item">
+                            <img src="images/settings/perk18.png" alt="perk">
+                            <p>
+                                Не соблюдение правил безопасности на транспорте
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buy">
+                <div class="list">
+                    <ul>
+                        <li>
+                            Широкий выбор GPS\ГЛОНАСС трекеров мониторинга
+                        </li>
+                        <li>
+                            Датчики уровня топлива под любой вид техники
+                        </li>
+                        <li>
+                            Облачные технологии и мощная аналитика автопарка
+                        </li>
+                        <li>
+                            Расширенная гарантия на оборудование
+                        </li>
+                        <li>
+                            Первоклассная спутниковая система мониторинга
+                        </li>
+                        <li>
+                            Уникальные отраслевые решения
+                        </li>
+                        <li>
+                            Единый стандарт обслуживания
+                        </li>
+                        <li>
+                            Установка системы мониторинга в Москве и обширная сеть филиалов по России
+                        </li>
+                        <li>
+                            Лояльная цена на спутниковый мониторинг
+                        </li>
+                    </ul>
+                </div>
+                <button>
+                    купить систему мониторинга транспорта
+                </button>
+            </div>
+        </div>
+        <div class="examples">
+            <div class="title">
+                Примеры установки ГЛОНАСС/GPS на:
+            </div>
+            <div class="items">
+                <div class="item">
+                    <img src="images/settings/examples/example1.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example2.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example3.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example4.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example5.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example6.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example7.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example8.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example9.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example10.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example11.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example12.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example13.png" alt="example">
+                </div>
+                <div class="item">
+                    <img src="images/settings/examples/example14.png" alt="example">
+                </div>
+            </div>
+        </div>
+    </main>
+<footer>
+    <div class="wrapper">
+        <div class="contacts">
+            <img class="logo" src="images/footer-logo.png" alt="logo">
+            <div class="title">Контакты:</div>
+            <div class="contactItem">
+                <div class="icon">
+                    <img src="images/geo.png" alt="icon">
+                </div>
+                <p>410012, г.Саратов, Ново-Астраханское шоссе, 67А <br></p>
+            </div>
+            <a class="seeAll" href="#">Смотреть все адреса</a>
+            <div class="contactItem">
+                <div class="icon">
+                    <img src="images/time.png" alt="icon">
+                </div>
+                <p>Пн-Пт с 09:00 до 18:00; Сб,Вс - Выходной</p>
+            </div>
+            <div class="contactItem itemPhone">
+                <div class="icon">
+                    <img src="images/phone.png" alt="icon">
+                </div>
+                <a href="tel:+78453688900">8 (845) 368-89-00</a>
+            </div>
+            <div class="contactItem">
+                <div class="icon">
+                    <img src="images/mail.png" alt="icon">
+                </div>
+                <a href="mailto:mail@plata-ts.ru">mail@plata-ts.ru</a>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#">
+                О компании
+            </a>
+            <a href="#">
+                Цифровые тахографы
+            </a>
+            <a href="#">
+                Карты водителя
+            </a>
+            <a href="#">
+                Глонасс мониторинг
+            </a>
+            <a href="#">
+                Переоборудование ДОПОГ
+            </a>
+            <a href="#">
+                Климатическое оборудование
+            </a>
+            <a href="#">
+                Лицензии и сертификаты
+            </a>
+        </div>
+    </div>
+    <div class="offerta">
+        Информация, представленная на сайте, не является публичной офертой | <a href="#">Политика обработки персональных данных.</a>
+    </div>
+    <div class="mobCity">
+        <div class="city">
+            Ваш город: <a href="#">Саратов</a>
+        </div>
+        <a href="tel:+78452777265" class="tel">8 (845) 277-72-65</a>
+    </div>
+</footer>
+<div class="mask">
+    <div class="popup">
+        <img src="images/offer.png" alt="offer" class="offer">
+        <svg class="xclose" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.76907" width="26.2239" height="3.68055" rx="1.84028" transform="rotate(48.7948 2.76907 0)" fill="white"/>
+            <rect width="26.2239" height="3.68055" rx="1.84028" transform="matrix(-0.658757 0.752356 0.752356 0.658757 17.2762 0)" fill="white"/>
+        </svg>
+        <div class="content">
+            <div class="title">
+                Получить коммерческое <br> предложение
+            </div>
+            <div class="subtitle">
+                Заполните форму ниже,, мы перезвоним Вам в течение 15 минут для уточнения деталей, и отправим коммерческое предложение в удобный мессенджер
+            </div>
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телефон">
+            <button>Получить предложение</button>
+            <div class="accept">
+                Нажимая на кнопку, я соглашаюсь с условиями политики обработки персональных данных
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script/main.js"></script>
+</body>
+</html>

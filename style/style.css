@@ -162,6 +162,122 @@ body main .banner .macbook {
 body main .banner .minibook {
   display: none;
 }
+body main .settingsBanner {
+  flex-direction: column;
+  margin-left: 15vw;
+  margin-bottom: 52px;
+}
+body main .settingsBanner .yellowBlock {
+  left: -101px;
+}
+body main .settingsBanner .yellowBlock .bottomLine {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 1px;
+  background: #404040;
+}
+body main .settingsBanner .subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #404040;
+  margin-bottom: 281px;
+  max-width: 411px;
+  margin-top: 25px;
+  position: relative;
+}
+body main .settingsBanner .glonas {
+  position: absolute;
+  z-index: 2;
+  bottom: -25px;
+  left: 216px;
+  max-height: 360px;
+  width: fit-content;
+}
+body main .settingsBanner .miniGlonas {
+  display: none;
+}
+body main .settingsBanner .bannerForm {
+  position: absolute;
+  width: 373px;
+  height: 410px;
+  bottom: 79px;
+  right: 15vw;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 19px;
+}
+body main .settingsBanner .bannerForm form {
+  padding: 41px 19px;
+  display: flex;
+  flex-direction: column;
+}
+body main .settingsBanner .bannerForm form .formTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: #404040;
+  margin-bottom: 53px;
+}
+body main .settingsBanner .bannerForm form input {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 88.9%;
+  color: #000000;
+  padding-bottom: 7.5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(64, 64, 64, 0.4);
+  margin-bottom: 34px;
+}
+body main .settingsBanner .bannerForm form input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 88.9%;
+  color: #000000;
+  opacity: 0.4;
+}
+body main .settingsBanner .bannerForm form button {
+  width: 333.32px;
+  height: 50px;
+  background: #FFCC10;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 26px;
+}
+body main .settingsBanner .bannerForm form button p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #404040;
+}
+body main .settingsBanner .bannerForm form .policy {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 88.9%;
+  text-align: center;
+  color: #404040;
+  margin-top: 20px;
+}
 body main .catalog h2 {
   margin: 80px 0 24px;
   font-family: "Montserrat";
@@ -316,6 +432,283 @@ body main .catalog .shortItems .software {
   text-transform: uppercase;
   color: #404040;
 }
+body main .expenses {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 818px;
+}
+body main .expenses .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #404040;
+  margin-bottom: 54px;
+  max-width: 354px;
+  margin-top: 62px;
+}
+body main .expenses .subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  color: #404040;
+  max-width: 354px;
+  margin-bottom: 52px;
+}
+body main .expenses .diagramBlock {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+body main .expenses .diagramBlock .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+body main .expenses .diagramBlock .item img {
+  margin-right: 20px;
+}
+body main .expenses .diagramBlock .item p {
+  max-width: 250px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #404040;
+}
+body main .expenses .perkBlock {
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 60px;
+  max-height: 818px;
+  padding-left: 21px;
+  margin-left: -250px;
+  border-left: 1px solid #404040;
+}
+body main .expenses .perkBlock .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-right: 34px;
+}
+body main .expenses .perkBlock .item img {
+  margin-right: 27px;
+}
+body main .expenses .perkBlock .item p {
+  max-width: 324px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 100%;
+  color: #404040;
+}
+body main .satelliteBlock {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+body main .satelliteBlock .title {
+  padding-top: 185px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #404040;
+  margin-bottom: 25px;
+  max-width: 520px;
+}
+body main .satelliteBlock .subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 100%;
+  color: #404040;
+  max-width: 522px;
+}
+body main .satelliteBlock .content {
+  margin-left: auto;
+  position: relative;
+}
+body main .satelliteBlock .content .markers {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+body main .satelliteBlock .content .markers .marker {
+  position: absolute;
+}
+body main .satelliteBlock .content .markers .first {
+  top: 247px;
+  left: 43px;
+}
+body main .satelliteBlock .content .markers .second {
+  top: 112px;
+  left: 150px;
+}
+body main .satelliteBlock .content .markers .third {
+  top: 103px;
+  left: 448px;
+}
+body main .satelliteBlock .content .markers .fourth {
+  bottom: 203px;
+  left: 448px;
+}
+body main .satelliteBlock .mobileContent {
+  display: none;
+}
+body main .priceBlock {
+  max-width: 1276px;
+  margin: 35px auto 100px;
+}
+body main .priceBlock .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #404040;
+  margin-bottom: 33px;
+}
+body main .priceBlock .prices {
+  width: 100%;
+  display: flex;
+}
+body main .priceBlock .prices .column .item {
+  border-right: 1px solid rgba(121, 121, 121, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #404040;
+  height: 62px;
+  text-align: center;
+}
+body main .priceBlock .prices .column .head {
+  background: #FFCC10;
+  text-align: center;
+  border-right: 1px solid #797979;
+}
+body main .priceBlock .prices .first .item {
+  width: 216px;
+}
+body main .priceBlock .prices .second .item {
+  display: flex;
+  flex-direction: column;
+  width: 304px;
+}
+body main .priceBlock .prices .second .item .oldPrice {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  text-decoration-line: line-through;
+  color: #404040;
+}
+body main .priceBlock .prices .second .item .newPrice {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #404040;
+}
+body main .priceBlock .prices .third .item {
+  width: 236px;
+}
+body main .priceBlock .prices .fourth .item {
+  width: 305px;
+}
+body main .priceBlock .prices .fifth .item {
+  width: 215px;
+  border: none;
+  font-size: 14px;
+  line-height: 100%;
+}
+body main .devicesBlock {
+  max-width: 1285px;
+  margin: 0 auto 83px;
+  display: flex;
+}
+body main .devicesBlock .info .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #404040;
+  margin-right: 26px;
+  max-width: 455px;
+}
+body main .devicesBlock .info button {
+  background: #FFCC10;
+  border-radius: 6px;
+  padding: 18px 33px;
+  margin-top: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #404040;
+}
+body main .devicesBlock .devices {
+  display: flex;
+  position: relative;
+  padding-left: 42px;
+}
+body main .devicesBlock .devices .line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #404040;
+  top: 55px;
+}
+body main .devicesBlock .devices .item {
+  position: relative;
+  margin-right: 156px;
+}
+body main .devicesBlock .devices .item p {
+  max-width: 121px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: #404040;
+  margin-top: 18px;
+}
+body main .devicesBlock .devices .item:last-child {
+  margin-right: unset;
+}
 body main .solutions {
   display: flex;
 }
@@ -325,6 +718,9 @@ body main .solutions .miniTruck {
 body main .solutions .truck {
   position: relative;
   display: flex;
+}
+body main .solutions .truck .truckPic {
+  max-width: 928px;
 }
 body main .solutions .truck .switch {
   position: absolute;
@@ -440,6 +836,158 @@ body main .solutions .choose .getSolution {
   color: #000000;
   background: #FFCC10;
   border-radius: 6px;
+}
+body main .benefits {
+  display: flex;
+  max-width: 1285px;
+  margin: 83px auto 74px;
+}
+body main .benefits .block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  margin-right: 20px;
+  max-width: 843px;
+  width: 100%;
+}
+body main .benefits .block .info {
+  padding-bottom: 54px;
+  border-bottom: 1px solid #797979;
+  margin-bottom: 19px;
+  width: 100%;
+}
+body main .benefits .block .info .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #404040;
+  max-width: 554px;
+}
+body main .benefits .block .info .subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #404040;
+  max-width: 799px;
+  margin-top: 27px;
+}
+body main .benefits .block .perks .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 88.9%;
+  color: #404040;
+  margin-bottom: 35px;
+}
+body main .benefits .block .perks .items {
+  display: flex;
+  flex-flow: row wrap;
+}
+body main .benefits .block .perks .items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 101px;
+  margin-bottom: 31px;
+}
+body main .benefits .block .perks .items .item p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 88.9%;
+  text-align: center;
+  color: #404040;
+  max-width: 209px;
+  margin-top: 22px;
+}
+body main .benefits .block .perks .items .item:nth-child(3n+3) {
+  margin-right: unset;
+}
+body main .benefits .buy {
+  border: 1px solid #797979;
+  box-sizing: border-box;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 641px;
+}
+body main .benefits .buy .list {
+  padding-left: 18px;
+}
+body main .benefits .buy .list ul {
+  margin-top: 46px;
+}
+body main .benefits .buy .list ul li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 88.9%;
+  color: #404040;
+  padding-left: 13px;
+  margin-bottom: 37px;
+}
+body main .benefits .buy .list ul li:last-child {
+  margin-bottom: unset;
+}
+body main .benefits .buy button {
+  margin-top: auto;
+  background: #FFCC10;
+  border-radius: 6px;
+  padding: 17px 23px;
+  width: 100%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #404040;
+}
+body main .examples {
+  max-width: 1285px;
+  width: 100%;
+  margin: 0 auto 85px;
+}
+body main .examples .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #404040;
+  margin-bottom: 65px;
+}
+body main .examples .items {
+  display: flex;
+  flex-flow: row wrap;
+}
+body main .examples .items .item {
+  width: 169px;
+  height: 169px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #797979;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 15px;
+  margin-bottom: 26px;
+}
+body main .examples .items .item:nth-child(7n+7) {
+  margin-right: unset;
 }
 body main .feedback {
   display: flex;
@@ -802,6 +1350,36 @@ body .mask .popup .content .accept {
     padding-top: 57px;
     padding-left: 50px;
   }
+  body main .settingsBanner {
+    width: 100%;
+    margin-left: 7vw;
+  }
+  body main .settingsBanner h1 {
+    padding-left: unset;
+  }
+  body main .settingsBanner .glonas {
+    bottom: 19px;
+    left: 92px;
+    width: 444px;
+  }
+  body main .settingsBanner .bannerForm {
+    right: 9vw;
+  }
+  body main .priceBlock .prices .column .item {
+    max-width: 200px;
+  }
+  body main .benefits .block .perks .items .item {
+    margin-right: 42px;
+  }
+  body main .examples .items .item {
+    width: 156px;
+    height: 156px;
+    margin-right: 7px;
+    margin-bottom: 15px;
+  }
+  body main .examples .items .item img {
+    width: 100px;
+  }
   body main .solutions {
     margin-bottom: 30px;
   }
@@ -909,6 +1487,66 @@ body .mask .popup .content .accept {
     font-size: 12px;
     padding: 10px;
   }
+  body main .settingsBanner {
+    margin-left: unset;
+  }
+  body main .settingsBanner .glonas {
+    display: none;
+  }
+  body main .settingsBanner .miniGlonas {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  body main .settingsBanner .bannerForm {
+    position: relative;
+    right: unset;
+    bottom: unset;
+    width: 100%;
+    height: fit-content;
+    border-radius: unset;
+  }
+  body main .settingsBanner .bannerForm form button {
+    margin: 26px auto 0;
+  }
+  body main .settingsBanner .bannerForm form .policy {
+    max-width: 254px;
+    margin: 20px auto 0;
+  }
+  body main .settingsBanner .subtitle {
+    margin-bottom: 60px;
+    padding-left: 20px;
+  }
+  body main .expenses {
+    flex-flow: column;
+    max-height: unset;
+    align-items: center;
+  }
+  body main .expenses .title {
+    order: 0;
+    text-align: center;
+  }
+  body main .expenses .subtitle {
+    order: 1;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+  body main .expenses .diagramBlock {
+    order: 3;
+  }
+  body main .expenses .perkBlock {
+    order: 2;
+    flex-flow: column;
+    margin: 0 0 15px;
+    border: none;
+    padding: 0 0 33px;
+    border-bottom: 1px solid #404040;
+  }
+  body main .expenses .perkBlock .item {
+    margin-bottom: 15px;
+    margin-right: unset;
+  }
   body main .catalog {
     margin-top: 26px;
   }
@@ -970,6 +1608,108 @@ body .mask .popup .content .accept {
   body main .catalog .items .item .order .btnTitle {
     font-size: 13px;
     line-height: 100%;
+  }
+  body main .satelliteBlock {
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+  }
+  body main .satelliteBlock .info .title {
+    padding-top: 40px;
+    text-align: center;
+  }
+  body main .satelliteBlock .info .subtitle {
+    text-align: center;
+    margin-bottom: 34px;
+  }
+  body main .satelliteBlock .content {
+    display: none;
+  }
+  body main .satelliteBlock .mobileContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+    width: 100%;
+  }
+  body main .satelliteBlock .mobileContent .item {
+    background: #FFFFFF;
+    border: 1px solid #797979;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 100%;
+    height: 128px;
+    padding: 21px 10px;
+    margin-bottom: 12px;
+  }
+  body main .satelliteBlock .mobileContent .item:last-child {
+    margin-bottom: unset;
+  }
+  body main .satelliteBlock .mobileContent .item .itemTitle {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #404040;
+    margin-bottom: 15px;
+  }
+  body main .satelliteBlock .mobileContent .item .itemSubtitle {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #404040;
+  }
+  body main .priceBlock {
+    max-width: 600px;
+    margin-top: 49px;
+  }
+  body main .priceBlock .title {
+    font-size: 24px;
+  }
+  body main .priceBlock .prices {
+    justify-content: center;
+  }
+  body main .priceBlock .prices .column .item {
+    width: auto;
+    max-width: 150px;
+    font-size: 12px;
+    line-height: 100%;
+  }
+  body main .priceBlock .prices .column .second .oldPrice {
+    font-size: 10px;
+  }
+  body main .priceBlock .prices .column .second .newPrice {
+    font-size: 12px;
+  }
+  body main .devicesBlock {
+    max-width: 600px;
+    flex-direction: column;
+    position: relative;
+  }
+  body main .devicesBlock .info .title {
+    text-align: center;
+  }
+  body main .devicesBlock .info button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  body main .devicesBlock .devices {
+    padding: 0;
+    margin-bottom: 69px;
+    margin-top: 25px;
+    justify-content: space-between;
+  }
+  body main .devicesBlock .devices .line {
+    display: none;
+  }
+  body main .devicesBlock .devices .item {
+    margin: 0;
   }
   body main .solutions {
     margin: 0 auto;
@@ -1042,6 +1782,43 @@ body .mask .popup .content .accept {
     font-size: 10px;
     line-height: 12px;
   }
+  body main .benefits {
+    max-width: 600px;
+    flex-direction: column;
+  }
+  body main .benefits .block {
+    padding: 0;
+    margin: 0;
+  }
+  body main .benefits .block .info {
+    padding-bottom: 30px;
+  }
+  body main .benefits .block .info .title {
+    text-align: center;
+  }
+  body main .benefits .block .info .subtitle {
+    text-align: center;
+  }
+  body main .benefits .block .perks {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+  body main .benefits .block .perks .title {
+    text-align: center;
+  }
+  body main .benefits .block .perks .items .item {
+    margin-right: 13px;
+  }
+  body main .benefits .block .perks .items .item p {
+    font-size: 12px;
+    max-width: 131px;
+  }
+  body main .benefits .block .perks .items .item:nth-child(3n+3) {
+    margin-right: 13px;
+  }
+  body main .benefits .block .perks .items .item:nth-child(2n+2) {
+    margin-right: unset;
+  }
   body main .feedback {
     flex-direction: column;
     margin-bottom: 35px;
@@ -1092,6 +1869,28 @@ body .mask .popup .content .accept {
     width: 188px;
     font-size: 10px;
     line-height: 12px;
+  }
+  body main .examples .title {
+    margin-bottom: 29px;
+  }
+  body main .examples .items {
+    max-width: 288px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  body main .examples .items .item {
+    width: 90px;
+    height: 90px;
+    margin-right: 9px;
+  }
+  body main .examples .items .item img {
+    width: 70px;
+  }
+  body main .examples .items .item:nth-child(7n+7) {
+    margin-right: 9px;
+  }
+  body main .examples .items .item:nth-child(3n+3) {
+    margin-right: unset;
   }
   body footer .wrapper {
     max-width: 600px;
@@ -1167,6 +1966,143 @@ body .mask .popup .content .accept {
   body main .banner .tabs .tab:first-child {
     border: none;
   }
+  body main .settingsBanner {
+    padding: 0;
+  }
+  body main .settingsBanner h1 {
+    padding-left: 16px;
+  }
+  body main .settingsBanner .subtitle {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 100%;
+    color: #404040;
+    margin-top: 3px;
+    margin-bottom: 42px;
+    padding-left: 16px;
+    max-width: 138px;
+  }
+  body main .settingsBanner .bannerForm form button {
+    width: 188px;
+  }
+  body main .expenses {
+    max-width: 288px;
+  }
+  body main .expenses .title {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 21px;
+  }
+  body main .expenses .subtitle {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  body main .expenses .perkBlock .item img {
+    margin-right: 13px;
+  }
+  body main .expenses .perkBlock .item p {
+    font-size: 12px;
+    line-height: 100%;
+  }
+  body main .expenses .diagramBlock {
+    flex-direction: unset;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  body main .expenses .diagramBlock .item {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .expenses .diagramBlock .item img {
+    width: 75px;
+    height: 75px;
+    margin: 0;
+  }
+  body main .expenses .diagramBlock .item p {
+    margin-top: 11px;
+    width: 131px;
+    font-size: 9px;
+    line-height: 100%;
+    text-align: center;
+  }
+  body main .satelliteBlock {
+    max-width: 288px;
+  }
+  body main .satelliteBlock .info .title {
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 15px;
+  }
+  body main .satelliteBlock .info .subtitle {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  body main .satelliteBlock .mobileContent .item {
+    padding: 21px 11px;
+  }
+  body main .satelliteBlock .mobileContent .item .itemTitle {
+    font-size: 11px;
+    line-height: 100%;
+    max-width: 154px;
+  }
+  body main .satelliteBlock .mobileContent .item .itemSubtitle {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  body main .priceBlock {
+    max-width: 100%;
+    margin-bottom: 34px;
+  }
+  body main .priceBlock .title {
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 31px;
+  }
+  body main .priceBlock .prices .column .item {
+    max-width: 70px;
+    font-size: 7px;
+    line-height: 100%;
+  }
+  body main .priceBlock .prices .column .item svg {
+    width: 12px;
+    height: 12px;
+  }
+  body main .priceBlock .prices .second .item .oldPrice {
+    font-size: 5px;
+    line-height: 100%;
+  }
+  body main .priceBlock .prices .second .item .newPrice {
+    font-size: 7px;
+    line-height: 100%;
+  }
+  body main .devicesBlock {
+    margin-bottom: 41px;
+  }
+  body main .devicesBlock .info .title {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  body main .devicesBlock .info button {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 15px 14px;
+  }
+  body main .devicesBlock .devices .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body main .devicesBlock .devices .item img {
+    width: 70px;
+  }
+  body main .devicesBlock .devices .item p {
+    font-size: 9px;
+    line-height: 100%;
+  }
   body main .catalog .items .item .itemContent .title {
     font-size: 15px;
     line-height: 100%;
@@ -1187,6 +2123,51 @@ body .mask .popup .content .accept {
     font-size: 12px;
     line-height: 100%;
     text-align: center;
+  }
+  body main .benefits {
+    margin-top: 41px;
+    max-width: 288px;
+    margin-bottom: 38px;
+  }
+  body main .benefits .block .info .title {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  body main .benefits .block .info .subtitle {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  body main .benefits .block .perks .title {
+    font-size: 12px;
+    line-height: 88.9%;
+    margin-bottom: 25px;
+  }
+  body main .benefits .block .perks .items .item p {
+    font-size: 9px;
+    line-height: 88.9%;
+  }
+  body main .benefits .buy .list {
+    padding-left: 0;
+  }
+  body main .benefits .buy .list ul {
+    margin-top: 30px;
+  }
+  body main .benefits .buy .list ul li {
+    font-size: 12px;
+    line-height: 100%;
+  }
+  body main .benefits .buy button {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  body main .examples {
+    max-width: 288px;
+    margin-bottom: 45px;
+  }
+  body main .examples .title {
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 29px;
   }
   body footer .wrapper {
     max-width: 100%;
