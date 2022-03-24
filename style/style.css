@@ -756,9 +756,28 @@ body main .solutions .miniTruck {
 body main .solutions .truck {
   position: relative;
   display: flex;
-}
-body main .solutions .truck .truckPic {
+  width: 100%;
   max-width: 928px;
+  height: 628px;
+}
+body main .solutions .truck .truckBlock {
+  position: relative;
+  width: 100%;
+}
+body main .solutions .truck .truckBlock .truckPic {
+  position: absolute;
+  right: 29px;
+  top: 100px;
+  z-index: 1;
+}
+body main .solutions .truck .truckBlock .yellowSquare {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 0;
+  height: 729px;
+  width: 600px;
+  background: #FFCC10;
 }
 body main .solutions .truck .switch {
   position: absolute;
@@ -878,7 +897,9 @@ body main .solutions .choose .getSolution {
 body main .benefits {
   display: flex;
   max-width: 1285px;
-  margin: 83px auto 74px;
+  margin: 162px auto 74px;
+  position: relative;
+  z-index: 2;
 }
 body main .benefits .block {
   display: flex;
@@ -1029,6 +1050,8 @@ body main .examples .items .item:nth-child(7n+7) {
 }
 body main .feedback {
   display: flex;
+  position: relative;
+  margin-top: 150px;
 }
 body main .feedback .questions {
   max-width: 734px;
@@ -1406,6 +1429,9 @@ body .mask .popup .content .accept {
   body main .priceBlock .prices .column .item {
     max-width: 200px;
   }
+  body main .benefits {
+    margin-top: 40px;
+  }
   body main .benefits .block .perks .items .item {
     margin-right: 42px;
   }
@@ -1420,13 +1446,21 @@ body .mask .popup .content .accept {
   }
   body main .solutions {
     margin-bottom: 30px;
+    height: 502px;
   }
   body main .solutions .truck {
     width: 732px;
     height: fit-content;
   }
-  body main .solutions .truck .truckPic {
+  body main .solutions .truck .truckBlock .yellowSquare {
+    top: 25px;
+    height: 479px;
+    width: 446px;
+  }
+  body main .solutions .truck .truckBlock .truckPic {
     width: 532px;
+    left: 0;
+    top: 57px;
   }
   body main .solutions .truck .cargo {
     top: 101px;
@@ -1459,6 +1493,9 @@ body .mask .popup .content .accept {
   }
   body main .solutions .choose .equipment {
     margin-bottom: 32px;
+  }
+  body main .feedback {
+    margin-top: unset;
   }
   body footer .wrapper {
     max-width: 1150px;
@@ -1750,7 +1787,7 @@ body .mask .popup .content .accept {
     margin: 0;
   }
   body main .solutions {
-    margin: 0 auto;
+    margin: 0 auto 191px;
   }
   body main .solutions .truck {
     display: none;
@@ -1860,6 +1897,7 @@ body .mask .popup .content .accept {
   body main .feedback {
     flex-direction: column;
     margin-bottom: 35px;
+    margin-top: unset;
   }
   body main .feedback .questions {
     justify-content: center;
@@ -2148,6 +2186,9 @@ body .mask .popup .content .accept {
   body main .catalog .items .item .itemContent .description {
     font-size: 10px;
     line-height: 10px;
+  }
+  body main .solutions {
+    margin-bottom: 0;
   }
   body main .solutions .choose {
     max-width: 320px;

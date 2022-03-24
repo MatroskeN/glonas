@@ -826,8 +826,27 @@ body {
       .truck {
         position: relative;
         display: flex;
-        .truckPic{
-          max-width: 928px;
+        width: 100%;
+        max-width: 928px;
+        height: 628px;
+        .truckBlock{
+          position: relative;
+          width: 100%;
+          .truckPic{
+            position: absolute;
+            right: 29px;
+            top: 100px;
+            z-index: 1;
+          }
+          .yellowSquare{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            z-index: 0;
+            height: 729px;
+            width: 600px;
+            background: #FFCC10;
+          }
         }
         .switch {
           position: absolute;
@@ -968,7 +987,9 @@ body {
     .benefits{
       display: flex;
       max-width: 1285px;
-      margin: 83px auto 74px;
+      margin: 162px auto 74px;
+      position: relative;
+      z-index: 2;
       .block{
         display: flex;
         flex-direction: column;
@@ -1123,7 +1144,8 @@ body {
 
     .feedback {
       display: flex;
-
+      position: relative;
+      margin-top: 150px;
       .questions {
         max-width: 734px;
         width: 100%;
@@ -1562,6 +1584,7 @@ body {
       }
 
       .benefits{
+        margin-top: 40px;
         .block{
           .perks{
             .items{
@@ -1589,12 +1612,22 @@ body {
 
       .solutions {
         margin-bottom: 30px;
+        height: 502px;
         .truck {
           width: 732px;
           height: fit-content;
 
-          .truckPic {
-            width: 532px;
+          .truckBlock{
+            .yellowSquare{
+              top: 25px;
+              height: 479px;
+              width: 446px;
+            }
+            .truckPic {
+              width: 532px;
+              left: 0;
+              top: 57px;
+            }
           }
 
           .cargo {
@@ -1638,6 +1671,9 @@ body {
             margin-bottom: 32px;
           }
         }
+      }
+      .feedback{
+        margin-top: unset;
       }
     }
 
@@ -1983,7 +2019,7 @@ body {
         }
       }
       .solutions {
-        margin: 0 auto;
+        margin: 0 auto 191px;
 
         .truck {
           display: none;
@@ -2110,6 +2146,7 @@ body {
       .feedback {
         flex-direction: column;
         margin-bottom: 35px;
+        margin-top: unset;
 
         .questions {
           justify-content: center;
@@ -2467,6 +2504,7 @@ body {
         }
       }
       .solutions {
+        margin-bottom: 0;
         .choose {
           max-width: 320px;
           .title{

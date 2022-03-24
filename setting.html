@@ -492,7 +492,10 @@
         </div>
         <div class="solutions">
             <div class="truck">
-                <img class="truckPic" src="images/truck.png" alt="truck">
+                <div class="truckBlock">
+                    <div class="yellowSquare"></div>
+                    <img class="truckPic" src="images/truck.png" alt="truck">
+                </div>
                 <div class="switch cargo active">Грузоперевозки</div>
                 <div class="switch taxi">Такси и автопрокат</div>
                 <div class="switch corp">Корпоративные <br> автопарки</div>
@@ -506,20 +509,20 @@
                 </div>
                 <hr>
                 <div class="mobTabs">
-                    <select name="" id="">
-                        <option value="">
+                    <select name="" id="" class="selectCar">
+                        <option class="option" value="truck">
                             Грузоперевозки
                         </option>
-                        <option value="">
+                        <option value="taxi">
                             Такси и автопрокат
                         </option>
-                        <option value="">
+                        <option value="corp">
                             Корпоративные автопарки
                         </option>
-                        <option value="">
+                        <option value="spec">
                             Спецтехника
                         </option>
-                        <option value="">
+                        <option value="passenger">
                             Пассажироперевозки
                         </option>
                     </select>
