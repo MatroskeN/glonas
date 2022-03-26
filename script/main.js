@@ -6,6 +6,20 @@ document.querySelector('.getSolution').onclick = function (){
 document.querySelector('.xclose').onclick = function (){
     document.querySelector('.mask').style.display = "none";
 }
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 
 $( document ).ready(function() {
     //desktop tabs change function
@@ -71,4 +85,54 @@ $( document ).ready(function() {
                 console.log('Oops');
         }
     })
+    //report tabs
+    $(".reportTab").click(function (){
+        $(".activeReport").removeClass('activeReport')
+        $(this).addClass('activeReport')
+    })
+
+    $(".first").click(function (){
+        $('.reportPic').attr('src', 'images/monitor/report1.png')
+    })
+    $(".second").click(function (){
+        $('.reportPic').attr('src', 'images/monitor/report2.png')
+    })
+    $(".third").click(function (){
+        $('.reportPic').attr('src', 'images/monitor/report3.png')
+    })
+    $(".fourth").click(function (){
+        $('.reportPic').attr('src', 'images/monitor/report4.png')
+    })
+    $(".fifth").click(function (){
+        $('.reportPic').attr('src', 'images/monitor/report5.png')
+    })
+    //mob reportTabs
+    $(".selectReport").change(function (){
+        switch ($(this).val()){
+            case 'first':
+                $('.reportPic').attr('src', 'images/monitor/report1.png')
+                break;
+            case 'second':
+                $('.reportPic').attr('src', 'images/monitor/report2.png')
+                break;
+            case 'third':
+                $('.reportPic').attr('src', 'images/monitor/report3.png')
+                break;
+            case 'fourth':
+                $('.reportPic').attr('src', 'images/monitor/report4.png')
+                break;
+            case 'fifth':
+                $('.reportPic').attr('src', 'images/monitor/report5.png')
+                break;
+            default:
+                console.log('Oops');
+        }
+    })
+
+    //faq tabs
+    $(".passive").click(function (){
+        $('.active').removeClass('active')
+        $(this).addClass('active')
+        $(this).removeClass('passive')
+    });
 });

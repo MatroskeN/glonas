@@ -9,6 +9,9 @@ body h1, body h2, body p, body a, body button, body img {
   outline: none;
   text-decoration: none;
 }
+body hr {
+  border: none;
+}
 body button {
   cursor: pointer;
 }
@@ -278,6 +281,57 @@ body main .settingsBanner .bannerForm form .policy {
   color: #404040;
   margin-top: 20px;
 }
+body main .monitorBanner .yellowBlock {
+  height: 663px;
+}
+body main .monitorBanner .title {
+  position: relative;
+  z-index: 3;
+}
+body main .monitorBanner h1 {
+  padding-right: 130px;
+}
+body main .monitorBanner .subtitle {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  margin-top: 30px;
+}
+body main .monitorBanner .subtitle p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #404040;
+  max-width: 411px;
+  margin-right: 57px;
+}
+body main .monitorBanner .subtitle button {
+  background: #404040;
+  border-radius: 6px;
+  padding: 17px 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+body main .monitorBanner .tabs {
+  max-width: 1306px;
+}
+body main .monitorBanner .tabs .tab {
+  max-width: 180px;
+}
+body main .monitorBanner .tabs .tab:first-child {
+  border: none;
+}
+body main .monitorBanner .tabs .tab:nth-child(3) {
+  border-left: 1px solid #404040;
+}
 body main .catalog h2 {
   margin: 80px 0 24px;
   font-family: "Montserrat";
@@ -431,6 +485,191 @@ body main .catalog .shortItems .software {
   text-align: center;
   text-transform: uppercase;
   color: #404040;
+}
+body main .troubles {
+  max-width: 1280px;
+  width: 100%;
+  margin: 104px auto 0;
+  display: flex;
+}
+body main .troubles .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #404040;
+  max-width: 327px;
+  margin-right: 88px;
+}
+body main .troubles .items {
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 35px;
+  padding-top: 20px;
+  border-left: 1px solid #404040;
+}
+body main .troubles .items .item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 81px;
+  margin-right: 73px;
+}
+body main .troubles .items .item:nth-child(2n+2) {
+  margin-right: unset;
+}
+body main .troubles .items .item img {
+  margin-right: 33px;
+}
+body main .troubles .items .item .text {
+  display: flex;
+  flex-direction: column;
+}
+body main .troubles .items .item .text .itemTitle {
+  margin-bottom: 33px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 100%;
+  color: #404040;
+  max-width: 268px;
+}
+body main .troubles .items .item .text .itemSubtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #797979;
+  max-width: 300px;
+}
+body main .control {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+body main .control .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body main .control .info .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #404040;
+  max-width: 371px;
+  margin-right: 21px;
+  margin-bottom: 24px;
+}
+body main .control .info button {
+  background: #FFCC10;
+  border-radius: 6px;
+  padding: 18px 33px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #404040;
+}
+body main .control .block {
+  display: flex;
+  flex-direction: column;
+}
+body main .control .block .devices {
+  display: flex;
+  align-items: center;
+  padding-left: 111px;
+  padding-right: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  border-left: 1px solid #404040;
+}
+body main .control .block .devices .line {
+  position: absolute;
+  left: 0;
+  top: 61px;
+  background: #404040;
+  height: 1px;
+  width: 100%;
+}
+body main .control .block .devices .device {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 156px;
+}
+body main .control .block .devices .device:last-child {
+  margin-right: unset;
+}
+body main .control .block .devices .device p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: #404040;
+  margin-top: 18px;
+}
+body main .control .block .install {
+  max-width: 864px;
+  width: 100%;
+  background: #FFCC10;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+}
+body main .control .block .install .text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #404040;
+  padding-top: 56px;
+  padding-left: 78px;
+  max-width: 283px;
+  margin-right: 128px;
+}
+body main .control .block .install hr {
+  width: 283px;
+  height: 1px;
+  background: #404040;
+  margin: 14px 0 16px;
+}
+body main .control .block .install .subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #404040;
+  padding-bottom: 60px;
+}
+body main .control .block button {
+  background: #404040;
+  border-radius: 6px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 17px 53px;
 }
 body main .expenses {
   max-width: 1280px;
@@ -893,6 +1132,385 @@ body main .solutions .choose .getSolution {
   color: #000000;
   background: #FFCC10;
   border-radius: 6px;
+}
+body main .monitorSolutions .truck .truckBlock .yellowSquare {
+  height: 729px;
+  width: 713px;
+  top: 0;
+}
+body main .monitorSolutions .choose {
+  padding-top: 80px;
+}
+body main .test {
+  max-width: 1280px;
+  width: 100%;
+  margin: 74px auto 61px;
+  display: flex;
+  position: relative;
+}
+body main .test .tabs {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 628px;
+  position: relative;
+  z-index: 2;
+}
+body main .test .tabs .tab {
+  width: 303px;
+  height: 303px;
+  background: #FFFFFF;
+  border: 1px solid #797979;
+  box-sizing: border-box;
+  margin-right: 22px;
+  margin-bottom: 23px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+body main .test .tabs .tab:nth-child(2n+2) {
+  margin-right: unset;
+}
+body main .test .tabs .tab img {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  opacity: 0;
+  transition: all 0.4s;
+}
+body main .test .tabs .tab .text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #797979;
+  transition: all 0.4s;
+  max-width: 264px;
+}
+body main .test .tabs .tab:hover {
+  border: 1px solid #797979;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.4);
+}
+body main .test .tabs .tab:hover img {
+  opacity: 1;
+}
+body main .test .tabs .tab:hover .text {
+  color: #404040;
+}
+body main .test .swiper {
+  display: none;
+}
+body main .test .testTitle {
+  margin-left: 128px;
+  padding-top: 88px;
+  position: relative;
+  z-index: 0;
+}
+body main .test .testTitle .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #404040;
+}
+body main .test .testTitle .subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  color: #404040;
+}
+body main .test .testForm {
+  position: absolute;
+  width: 951px;
+  height: 348px;
+  background: #FFCC10;
+  border-radius: 0px;
+  z-index: 1;
+  bottom: -22px;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+}
+body main .test .testForm form {
+  max-width: 462px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: 58px;
+}
+body main .test .testForm form .formTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #404040;
+  margin-top: 21px;
+  max-width: 269px;
+}
+body main .test .testForm form hr {
+  background: #404040;
+  margin: 21px 0 36px;
+  width: 100%;
+  height: 1px;
+  border: none;
+}
+body main .test .testForm form input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding-bottom: 7px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 88.9%;
+  color: #000000;
+  border-bottom: 1px solid rgba(64, 64, 64, 0.4);
+  margin-bottom: 35px;
+  max-width: 412px;
+  width: 100%;
+}
+body main .test .testForm form input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 88.9%;
+  color: #000000;
+  opacity: 0.4;
+}
+body main .test .testForm form button {
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 17px 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #404040;
+}
+body main .test .testForm form .policy {
+  max-width: 412px;
+  width: 100%;
+  margin-top: 13px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 88.9%;
+  color: #404040;
+}
+body main .possibilities {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+body main .possibilities .info {
+  padding-top: 113px;
+}
+body main .possibilities .info .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #404040;
+  margin-bottom: 13px;
+}
+body main .possibilities .info .subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  color: #404040;
+  margin-bottom: 91px;
+}
+body main .possibilities .info ul li {
+  max-width: 505px;
+  margin-bottom: 27px;
+}
+body main .possibilities .info ul li p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #404040;
+}
+body main .possibilities .info ul li p strong {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 100%;
+  color: #404040;
+  margin-bottom: 10px;
+}
+body main .reports {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+body main .reports .content {
+  display: flex;
+  align-items: flex-start;
+  padding-right: 38px;
+}
+body main .reports .interact {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #404040;
+  padding-top: 112px;
+  padding-left: 66px;
+}
+body main .reports .interact .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #404040;
+  margin-bottom: 20px;
+}
+body main .reports .interact .subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  color: #404040;
+  margin-bottom: 72px;
+}
+body main .reports .interact .tabs .item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #656565;
+  margin-bottom: 10px;
+  padding: 10px 8px;
+  width: fit-content;
+  transition: all 0.4s;
+}
+body main .reports .interact .tabs .activeReport {
+  background: #FFCC10;
+  padding-left: 44px;
+  color: #FFFFFF;
+}
+body main .reports .interact .selectReport {
+  display: none;
+}
+body main .faq {
+  max-width: 1276px;
+  width: 100%;
+  margin: 59px auto 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .faq .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #404040;
+  margin-bottom: 41px;
+  max-width: 792px;
+}
+body main .faq .table {
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body main .faq .table .item {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 36px;
+  border-bottom: 1px solid rgba(121, 121, 121, 0.4);
+}
+body main .faq .table .item .itemTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body main .faq .table .item .itemTitle p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 100%;
+  color: #404040;
+}
+body main .faq .table .item .itemTitle button {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+body main .faq .table .item .itemTitle .plus {
+  display: block;
+}
+body main .faq .table .item .itemTitle .minus {
+  display: none;
+}
+body main .faq .table .item .itemContent {
+  display: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #404040;
+  max-width: 1024px;
+  margin-top: 24px;
+}
+body main .faq .table .item:first-child {
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+}
+body main .faq .table .item:last-child {
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
+}
+body main .faq .table .active {
+  background: #FFCC10;
+}
+body main .faq .table .active .itemTitle .plus {
+  display: none;
+}
+body main .faq .table .active .itemTitle .minus {
+  display: block;
+}
+body main .faq .table .active .itemContent {
+  display: block;
 }
 body main .benefits {
   display: flex;
@@ -1426,6 +2044,25 @@ body .mask .popup .content .accept {
   body main .settingsBanner .bannerForm {
     right: 9vw;
   }
+  body main .monitorBanner .macbook {
+    width: 45%;
+  }
+  body main .monitorBanner .tabs {
+    bottom: -54px;
+  }
+  body main .monitorBanner .yellowBlock {
+    height: 771px;
+    width: 630px;
+  }
+  body main .monitorBanner .title .subtitle {
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: flex-start;
+    padding-left: 50px;
+  }
+  body main .monitorBanner .title .subtitle p {
+    margin-bottom: 20px;
+  }
   body main .priceBlock .prices .column .item {
     max-width: 200px;
   }
@@ -1435,6 +2072,12 @@ body .mask .popup .content .accept {
   body main .benefits .block .perks .items .item {
     margin-right: 42px;
   }
+  body main .test .testForm {
+    width: 825px;
+  }
+  body main .test .testForm form {
+    margin-right: 20px;
+  }
   body main .examples .items .item {
     width: 156px;
     height: 156px;
@@ -1443,6 +2086,9 @@ body .mask .popup .content .accept {
   }
   body main .examples .items .item img {
     width: 100px;
+  }
+  body main .control .block .devices {
+    padding-right: 35px;
   }
   body main .solutions {
     margin-bottom: 30px;
@@ -1593,6 +2239,39 @@ body .mask .popup .content .accept {
     margin-bottom: 60px;
     padding-left: 20px;
   }
+  body main .monitorBanner .title {
+    position: unset;
+  }
+  body main .monitorBanner .title .subtitle {
+    position: unset;
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+  body main .monitorBanner .title .subtitle p {
+    font-size: 10px;
+    max-width: 153px;
+  }
+  body main .monitorBanner .title .subtitle button {
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    padding: 15px 14px;
+  }
+  body main .monitorBanner .tabs {
+    flex-direction: column;
+    bottom: 55px;
+    border: none;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  body main .monitorBanner .tabs .tab {
+    padding: 0;
+    text-align: left;
+    border: none !important;
+    padding-bottom: 10px;
+  }
   body main .expenses {
     flex-flow: column;
     max-height: unset;
@@ -1683,6 +2362,241 @@ body .mask .popup .content .accept {
   body main .catalog .items .item .order .btnTitle {
     font-size: 13px;
     line-height: 100%;
+  }
+  body main .troubles {
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin-top: 150px;
+  }
+  body main .troubles .title {
+    font-size: 16px;
+    line-height: 100%;
+    margin: 0 0 32px 0;
+    text-align: center;
+  }
+  body main .troubles .items {
+    padding: 0;
+    border: none;
+    justify-content: center;
+  }
+  body main .troubles .items .item {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  body main .troubles .items .item .text .itemTitle {
+    margin-bottom: 14px;
+  }
+  body main .control {
+    flex-direction: column;
+    margin-top: 36px;
+    position: relative;
+  }
+  body main .control .info {
+    align-items: center;
+  }
+  body main .control .info .title {
+    margin: 0 0 30px;
+    text-align: center;
+  }
+  body main .control .info button {
+    position: absolute;
+    top: 285px;
+  }
+  body main .control .block .devices {
+    border: none;
+    padding: 0 0 100px 0;
+    justify-content: space-around;
+  }
+  body main .control .block .devices .line {
+    display: none;
+  }
+  body main .control .block .devices .device {
+    margin: 0;
+  }
+  body main .control .block .install {
+    max-width: 600px;
+    flex-direction: column;
+  }
+  body main .control .block .install .text {
+    margin: 0;
+    padding: 31px 0 0;
+  }
+  body main .control .block .install .text .title {
+    text-align: center;
+  }
+  body main .control .block .install .text .subtitle {
+    padding-bottom: 27px;
+    text-align: center;
+  }
+  body main .control .block .install button {
+    margin-bottom: 30px;
+  }
+  body main .test {
+    max-width: 600px;
+    flex-direction: column;
+  }
+  body main .test .testTitle {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .test .testTitle .title {
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    max-width: 226px;
+  }
+  body main .test .testTitle .subtitle {
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+    max-width: 246px;
+  }
+  body main .test .tabs {
+    display: none;
+  }
+  body main .test .swiper {
+    display: flex;
+    max-width: 320px;
+    z-index: 3;
+  }
+  body main .test .swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  body main .test .swiper .swiper-slide .tab {
+    width: 190px;
+    height: 190px;
+    background: #FFFFFF;
+    border: 1px solid #797979;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  body main .test .swiper .swiper-slide .tab img {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: -20px;
+    left: -30px;
+  }
+  body main .test .swiper .swiper-slide .tab .text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    text-align: center;
+    color: #797979;
+    max-width: 170px;
+  }
+  body main .test .swiper .swiper-button-next, body main .test .swiper .swiper-button-prev {
+    color: #404040;
+  }
+  body main .test .testForm {
+    position: relative;
+    width: 100%;
+    bottom: unset;
+    right: unset;
+    z-index: 1;
+    top: -20px;
+  }
+  body main .test .testForm form {
+    align-items: center;
+    margin: 20px auto 0;
+  }
+  body main .test .testForm form .formTitle {
+    text-align: center;
+  }
+  body main .possibilities img {
+    width: 304px;
+    height: 304px;
+  }
+  body main .possibilities .info {
+    padding-top: unset;
+  }
+  body main .possibilities .info .title {
+    font-size: 16px;
+    line-height: 100%;
+    max-width: 226px;
+    margin-bottom: 10px;
+  }
+  body main .possibilities .info .subtitle {
+    font-size: 12px;
+    line-height: 100%;
+    max-width: 246px;
+    margin-bottom: 35px;
+  }
+  body main .possibilities .info ul {
+    margin-left: -25px;
+  }
+  body main .possibilities .info ul li {
+    max-width: 145px;
+    margin-bottom: 18px;
+  }
+  body main .possibilities .info ul li p {
+    font-size: 9px;
+    line-height: 100%;
+  }
+  body main .possibilities .info ul li p strong {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  body main .reports {
+    flex-direction: column-reverse;
+    max-width: 600px;
+  }
+  body main .reports .content {
+    align-items: center;
+    padding: 0;
+  }
+  body main .reports .content img {
+    width: 100%;
+  }
+  body main .reports .interact {
+    border: none;
+    padding-top: 35px;
+    padding-left: unset;
+    align-items: center;
+  }
+  body main .reports .interact .title {
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 226px;
+  }
+  body main .reports .interact .subtitle {
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    max-width: 246px;
+    margin-bottom: 10px;
+  }
+  body main .reports .interact .tabs {
+    display: none;
+  }
+  body main .reports .interact .selectReport {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto 22px;
+    border: none;
+  }
+  body main .reports .interact .selectReport option {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 100%;
+    text-align: center;
+    color: #404040;
   }
   body main .satelliteBlock {
     flex-direction: column;
@@ -2063,6 +2977,92 @@ body .mask .popup .content .accept {
   body main .settingsBanner .bannerForm form button {
     width: 188px;
   }
+  body main .monitorBanner .minibook {
+    top: 0;
+  }
+  body main .monitorBanner .yellowBlock {
+    height: 300px;
+  }
+  body main .monitorBanner .title h1 {
+    margin-top: 0;
+  }
+  body main .monitorBanner .title .subtitle {
+    padding: 0;
+  }
+  body main .monitorBanner .title .subtitle button {
+    padding: 15px 10px;
+    font-size: 9px;
+    top: 225px;
+  }
+  body main .monitorBanner .tabs {
+    bottom: 19px;
+    padding-left: unset;
+  }
+  body main .troubles {
+    max-width: 288px;
+  }
+  body main .troubles .items .item img {
+    margin-right: 12px;
+  }
+  body main .troubles .items .item .text .itemTitle {
+    font-size: 12px;
+    line-height: 100%;
+    margin-bottom: 14px;
+  }
+  body main .troubles .items .item .text .itemSubtitle {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  body main .control .info .title {
+    font-size: 16px;
+    line-height: 100%;
+    max-width: 248px;
+  }
+  body main .control .info button {
+    top: 215px;
+  }
+  body main .control .block .devices .device img {
+    width: 70px;
+  }
+  body main .control .block .devices .device p {
+    font-size: 9px;
+    line-height: 100%;
+  }
+  body main .control .block .install .text .title {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  body main .control .block .install .text .subtitle {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  body main .possibilities {
+    max-width: 288px;
+  }
+  body main .test .testForm form {
+    max-width: 288px;
+  }
+  body main .test .testForm form .formTitle {
+    font-size: 11px;
+    line-height: 100%;
+    max-width: 165px;
+  }
+  body main .test .testForm form hr {
+    width: 100%;
+  }
+  body main .test .testForm form input {
+    width: 100%;
+  }
+  body main .test .testForm form button {
+    padding: 15px 11px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  body main .test .testForm form .policy {
+    font-size: 8px;
+    line-height: 88.9%;
+    text-align: center;
+  }
   body main .expenses {
     max-width: 288px;
   }
@@ -2203,6 +3203,9 @@ body .mask .popup .content .accept {
     line-height: 100%;
     text-align: center;
   }
+  body main .monitorSolutions .choose {
+    padding-top: 30px;
+  }
   body main .benefits {
     margin-top: 41px;
     max-width: 288px;
@@ -2247,6 +3250,27 @@ body .mask .popup .content .accept {
     font-size: 16px;
     line-height: 100%;
     margin-bottom: 29px;
+  }
+  body main .faq {
+    max-width: 288px;
+  }
+  body main .faq .title {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  body main .faq .table .item {
+    padding: 16px 17px;
+  }
+  body main .faq .table .item .itemTitle {
+    align-items: center;
+  }
+  body main .faq .table .item .itemTitle p {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  body main .faq .table .item .itemContent {
+    font-size: 9px;
+    line-height: 100%;
   }
   body footer .wrapper {
     max-width: 100%;
